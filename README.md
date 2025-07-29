@@ -78,19 +78,8 @@ Individual test classes as needed
 
 Folder Strucrure
 
-restassured-node-js-api-test/
-├── src/test/java/
-│   ├── com.api.tests/
-│   │   ├── AuthToken.java
-│   │   ├── LoginTest.java
-│   │   ├── UserCreationTest.java
-│   │   ├── UserDeletionTest.java
-│   │   ├── UserId.java
-│   │   ├── UsersListingTest.java
-│   │   └── UserUpdationTest.java
-├── pom.xml (if Maven used)
-└── testNg.xml
 
+![Folder Structure](https://github.com/user-attachments/assets/5d604be1-5d96-442c-bfd3-d76e2e3e021e)
 
 
 
