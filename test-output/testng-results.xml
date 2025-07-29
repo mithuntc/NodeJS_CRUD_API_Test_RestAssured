@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-29T12:15:51 IST" name="FullAPITestSuite" finished-at="2025-07-29T12:15:54 IST" duration-ms="2529">
+    <groups>
+    </groups>
+    <test started-at="2025-07-29T12:15:51 IST" name="FullFlowTest" finished-at="2025-07-29T12:15:54 IST" duration-ms="2529">
+      <class name="com.api.tests.UsersListTesting">
+        <test-method signature="testUsersListWithToken()[pri:2, instance:com.api.tests.UsersListTesting@51399530]" started-at="2025-07-29T12:15:53 IST" name="testUsersListWithToken" finished-at="2025-07-29T12:15:54 IST" depends-on-methods="com.api.tests.LoginTest.testValidLoginAPI" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersListWithToken -->
+        <test-method signature="testUsersListWithOutToken()[pri:3, instance:com.api.tests.UsersListTesting@51399530]" started-at="2025-07-29T12:15:54 IST" name="testUsersListWithOutToken" finished-at="2025-07-29T12:15:54 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersListWithOutToken -->
+      </class> <!-- com.api.tests.UsersListTesting -->
+      <class name="com.api.tests.UserDeletionTest">
+        <test-method signature="testDeleteUserWithToken()[pri:8, instance:com.api.tests.UserDeletionTest@2b71e916]" started-at="2025-07-29T12:15:54 IST" name="testDeleteUserWithToken" finished-at="2025-07-29T12:15:54 IST" depends-on-methods="com.api.tests.UserUpdationTest.testUpdateUserWithToken" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserWithToken -->
+        <test-method signature="testDeleteUserWithWrongId()[pri:9, instance:com.api.tests.UserDeletionTest@2b71e916]" started-at="2025-07-29T12:15:54 IST" name="testDeleteUserWithWrongId" finished-at="2025-07-29T12:15:54 IST" duration-ms="38" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <403> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <403> but was <200>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.api.tests.UserDeletionTest.testDeleteUserWithWrongId(UserDeletionTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserWithWrongId -->
+      </class> <!-- com.api.tests.UserDeletionTest -->
+      <class name="com.api.tests.UserUpdationTest">
+        <test-method signature="testUpdateUserWithToken()[pri:6, instance:com.api.tests.UserUpdationTest@411f53a0]" started-at="2025-07-29T12:15:54 IST" name="testUpdateUserWithToken" finished-at="2025-07-29T12:15:54 IST" depends-on-methods="com.api.tests.UserCreationTest.testCreateUserWithToken" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserWithToken -->
+        <test-method signature="testUpdateUserWithOutIdPassed()[pri:7, instance:com.api.tests.UserUpdationTest@411f53a0]" started-at="2025-07-29T12:15:54 IST" name="testUpdateUserWithOutIdPassed" finished-at="2025-07-29T12:15:54 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserWithOutIdPassed -->
+      </class> <!-- com.api.tests.UserUpdationTest -->
+      <class name="com.api.tests.LoginTest">
+        <test-method is-config="true" signature="setupLogin()[pri:0, instance:com.api.tests.LoginTest@74235045]" started-at="2025-07-29T12:15:51 IST" name="setupLogin" finished-at="2025-07-29T12:15:53 IST" duration-ms="2054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogin -->
+        <test-method signature="testValidLoginAPI()[pri:1, instance:com.api.tests.LoginTest@74235045]" started-at="2025-07-29T12:15:53 IST" name="testValidLoginAPI" finished-at="2025-07-29T12:15:53 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLoginAPI -->
+        <test-method signature="testInValidLoginAPI()[pri:2, instance:com.api.tests.LoginTest@74235045]" started-at="2025-07-29T12:15:53 IST" name="testInValidLoginAPI" finished-at="2025-07-29T12:15:53 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInValidLoginAPI -->
+      </class> <!-- com.api.tests.LoginTest -->
+      <class name="com.api.tests.UserCreationTest">
+        <test-method signature="testCreateUserWithToken()[pri:4, instance:com.api.tests.UserCreationTest@6b2ea799]" started-at="2025-07-29T12:15:54 IST" name="testCreateUserWithToken" finished-at="2025-07-29T12:15:54 IST" depends-on-methods="com.api.tests.LoginTest.testValidLoginAPI" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithToken -->
+        <test-method signature="testCreateUserWithOutToken()[pri:5, instance:com.api.tests.UserCreationTest@6b2ea799]" started-at="2025-07-29T12:15:54 IST" name="testCreateUserWithOutToken" finished-at="2025-07-29T12:15:54 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithOutToken -->
+      </class> <!-- com.api.tests.UserCreationTest -->
+    </test> <!-- FullFlowTest -->
+  </suite> <!-- FullAPITestSuite -->
+</testng-results>

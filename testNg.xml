@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FullAPITestSuite" verbose="1">
+  <test name="FullFlowTest">
+    <classes>
+      <class name="com.api.tests.LoginTest" />
+      <class name="com.api.tests.UsersListTesting" />
+      <class name="com.api.tests.UserCreationTest" />
+      <class name="com.api.tests.UserUpdationTest" />
+      <class name="com.api.tests.UserDeletionTest" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-FullAPITestSuite" class="navigator-link">
+              <span class="suite-name border-failed">FullAPITestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-FullAPITestSuite" class="navigator-link ">
+                    <span>D:\Node_JS_API_Testing_Rest_Assured\restassured-node-js-api-test\testNg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-FullAPITestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-FullAPITestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-FullAPITestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-FullAPITestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-FullAPITestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-FullAPITestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FullAPITestSuite" class="hide-methods failed suite-FullAPITestSuite"> (hide)</a> <!-- hide-methods failed suite-FullAPITestSuite -->
+                      <a href="#" panel-name="suite-FullAPITestSuite" class="show-methods failed suite-FullAPITestSuite"> (show)</a> <!-- show-methods failed suite-FullAPITestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-FullAPITestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserDeletionTest" class="method navigator-link" hash-for-method="testDeleteUserWithWrongId">testDeleteUserWithWrongId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FullAPITestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FullAPITestSuite" class="hide-methods passed suite-FullAPITestSuite"> (hide)</a> <!-- hide-methods passed suite-FullAPITestSuite -->
+                      <a href="#" panel-name="suite-FullAPITestSuite" class="show-methods passed suite-FullAPITestSuite"> (show)</a> <!-- show-methods passed suite-FullAPITestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-FullAPITestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserCreationTest" class="method navigator-link" hash-for-method="testCreateUserWithOutToken">testCreateUserWithOutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserCreationTest" class="method navigator-link" hash-for-method="testCreateUserWithToken">testCreateUserWithToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserDeletionTest" class="method navigator-link" hash-for-method="testDeleteUserWithToken">testDeleteUserWithToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.LoginTest" class="method navigator-link" hash-for-method="testInValidLoginAPI">testInValidLoginAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserUpdationTest" class="method navigator-link" hash-for-method="testUpdateUserWithOutIdPassed">testUpdateUserWithOutIdPassed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UserUpdationTest" class="method navigator-link" hash-for-method="testUpdateUserWithToken">testUpdateUserWithToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UsersListTesting" class="method navigator-link" hash-for-method="testUsersListWithOutToken">testUsersListWithOutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.UsersListTesting" class="method navigator-link" hash-for-method="testUsersListWithToken">testUsersListWithToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullAPITestSuite" title="com.api.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLoginAPI">testValidLoginAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FullAPITestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FullAPITestSuite" class="panel FullAPITestSuite">
+          <div class="suite-FullAPITestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.api.tests.UserDeletionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithWrongId">
+                  </a> <!-- testDeleteUserWithWrongId -->
+                  <span class="method-name">testDeleteUserWithWrongId</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;403&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.api.tests.UserDeletionTest.testDeleteUserWithWrongId(UserDeletionTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-failed -->
+          <div class="suite-FullAPITestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.tests.UserDeletionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithToken">
+                  </a> <!-- testDeleteUserWithToken -->
+                  <span class="method-name">testDeleteUserWithToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-passed -->
+          <div class="suite-FullAPITestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInValidLoginAPI">
+                  </a> <!-- testInValidLoginAPI -->
+                  <span class="method-name">testInValidLoginAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLoginAPI">
+                  </a> <!-- testValidLoginAPI -->
+                  <span class="method-name">testValidLoginAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-passed -->
+          <div class="suite-FullAPITestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.tests.UserCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUserWithOutToken">
+                  </a> <!-- testCreateUserWithOutToken -->
+                  <span class="method-name">testCreateUserWithOutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUserWithToken">
+                  </a> <!-- testCreateUserWithToken -->
+                  <span class="method-name">testCreateUserWithToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-passed -->
+          <div class="suite-FullAPITestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.tests.UsersListTesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsersListWithOutToken">
+                  </a> <!-- testUsersListWithOutToken -->
+                  <span class="method-name">testUsersListWithOutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsersListWithToken">
+                  </a> <!-- testUsersListWithToken -->
+                  <span class="method-name">testUsersListWithToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-passed -->
+          <div class="suite-FullAPITestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.tests.UserUpdationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserWithOutIdPassed">
+                  </a> <!-- testUpdateUserWithOutIdPassed -->
+                  <span class="method-name">testUpdateUserWithOutIdPassed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserWithToken">
+                  </a> <!-- testUpdateUserWithToken -->
+                  <span class="method-name">testUpdateUserWithToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullAPITestSuite-class-passed -->
+        </div> <!-- panel FullAPITestSuite -->
+        <div panel-name="test-xml-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Node_JS_API_Testing_Rest_Assured\restassured-node-js-api-test\testNg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;FullAPITestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FullFlowTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.api.tests.UsersListTesting&quot;/&gt;
+      &lt;class name=&quot;com.api.tests.UserCreationTest&quot;/&gt;
+      &lt;class name=&quot;com.api.tests.UserUpdationTest&quot;/&gt;
+      &lt;class name=&quot;com.api.tests.UserDeletionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FullFlowTest --&gt;
+&lt;/suite&gt; &lt;!-- FullAPITestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FullAPITestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FullFlowTest (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FullAPITestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FullAPITestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FullAPITestSuite');
+function tableData_FullAPITestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testUsersListWithToken')
+data.setCell(0, 2, 'com.api.tests.UsersListTesting')
+data.setCell(0, 3, 101);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCreateUserWithToken')
+data.setCell(1, 2, 'com.api.tests.UserCreationTest')
+data.setCell(1, 3, 94);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testUpdateUserWithToken')
+data.setCell(2, 2, 'com.api.tests.UserUpdationTest')
+data.setCell(2, 3, 45);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDeleteUserWithWrongId')
+data.setCell(3, 2, 'com.api.tests.UserDeletionTest')
+data.setCell(3, 3, 38);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testValidLoginAPI')
+data.setCell(4, 2, 'com.api.tests.LoginTest')
+data.setCell(4, 3, 32);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testUpdateUserWithOutIdPassed')
+data.setCell(5, 2, 'com.api.tests.UserUpdationTest')
+data.setCell(5, 3, 20);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUsersListWithOutToken')
+data.setCell(6, 2, 'com.api.tests.UsersListTesting')
+data.setCell(6, 3, 18);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInValidLoginAPI')
+data.setCell(7, 2, 'com.api.tests.LoginTest')
+data.setCell(7, 3, 18);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCreateUserWithOutToken')
+data.setCell(8, 2, 'com.api.tests.UserCreationTest')
+data.setCell(8, 3, 18);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDeleteUserWithToken')
+data.setCell(9, 2, 'com.api.tests.UserDeletionTest')
+data.setCell(9, 3, 16);
+window.suiteTableData['FullAPITestSuite']= { tableData: data, tableDiv: 'times-div-FullAPITestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 400 ms</span>
+              <div id="times-div-FullAPITestSuite">
+              </div> <!-- times-div-FullAPITestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FullAPITestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FullAPITestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupLogin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testValidLoginAPI</span>
+                <span class="method-start">2074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInValidLoginAPI</span>
+                <span class="method-start">2111 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.tests.UsersListTesting</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testUsersListWithToken</span>
+                <span class="method-start">2134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUsersListWithOutToken</span>
+                <span class="method-start">2237 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.tests.UserCreationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCreateUserWithToken</span>
+                <span class="method-start">2257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUserWithOutToken</span>
+                <span class="method-start">2353 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.tests.UserUpdationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserWithToken</span>
+                <span class="method-start">2373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserWithOutIdPassed</span>
+                <span class="method-start">2422 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.tests.UserDeletionTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserWithToken</span>
+                <span class="method-start">2444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteUserWithWrongId</span>
+                <span class="method-start">2462 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
