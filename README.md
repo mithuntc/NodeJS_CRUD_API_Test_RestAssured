@@ -75,6 +75,9 @@ Full test suite via testNg.xml
 Individual test classes as needed
 
 
+
+Folder Strucrure
+
 restassured-node-js-api-test/
 ├── src/test/java/
 │   ├── com.api.tests/
@@ -87,6 +90,10 @@ restassured-node-js-api-test/
 │   │   └── UserUpdationTest.java
 ├── pom.xml (if Maven used)
 └── testNg.xml
+
+
+
+
 -----------------------------------------------------------------------------------------------------
 **⚠️ Note:
 To run these tests, you must first start the API server locally on http://localhost:3000.
