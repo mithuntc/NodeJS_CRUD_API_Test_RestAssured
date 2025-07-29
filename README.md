@@ -6,7 +6,7 @@ This project is designed to automate API testing of a **Node.js CRUD backend** u
 
 ## 🚀 Tools & Technologies Used
 
-- **Java** (JDK 8+)
+- **Java** (JDK 17+)
 - **Rest Assured**
 - **TestNG**
 - **Hamcrest**
