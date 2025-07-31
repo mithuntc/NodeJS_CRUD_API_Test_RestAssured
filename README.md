@@ -74,7 +74,7 @@ Full test suite via testNg.xml
 
 Individual test classes as needed
 --------------------------------------
-Make sure to start the test execution from LoginTest.java when running tests individually, as the token obtained from the login API is required for user creation, update, and deletion APIs
+Make sure to start the test execution from LoginTest.java when running tests individually, as the token obtained from the login API is required for user creation, update, and deletion APIs(this is handled within the code itself).
 ---------------------------------------
 
 
